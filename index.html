@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/my-icon.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Hussam Tarteer | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root{
+      --background:#000019;
+      --primary:#00bbbe;
+      --secondary:#ffffff;
+      }
+
+      *{
+        margin: 0px;
+        padding: 0px;
+        
+      }
+
+      body{
+        background-color:var(--background);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        height: 100vh;
+
+        margin: 0px;
+      }
+
+      .attribution { font-size: 11px; text-align: center;color: var(--secondary); }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+
+      
+      
+      .main-container{
+        
+
+        /* border: 1px white solid; */
+
+        height: 80vh;
+        width: 25vw;
+
+        min-height: fit-content;
+        min-width: fit-content;
+
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+
+        padding: 30px;
+
+        background-color: rgb(30, 40, 75);
+
+
+      }
+
+      .img-container{
+        border-radius: 50%;
+        overflow: hidden;
+
+        height: 100px;
+        width: 100px;
+      }
+      .img-container img{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+      }
+
+      .text-container{
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+        gap: 0px;
+      }
+
+
+      .text-line{
+        color:var(--primary);
+        font-size: 3rem;
+        font-family: roboto;
+        
+      }
+
+      
+
+      .name{
+        font-size: 25px;
+
+        margin-top: 20px;
+      }
+      .place{
+        font-size: 15px;
+
+        margin-top: 10px;
+
+        color: var(--secondary);
+      }
+      .position{
+        font-size: 15px;
+
+        margin-top: 25px;
+      }
+
+
+
+      .button-container{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 30px;
+
+        width: 100%;
+
+        gap: 20px;
+      }
+
+      .social-button{
+        width: 100%;
+        height: 40px;
+
+        border: none;
+
+        border-radius: 10px;
+
+
+        background-color: var(--primary);
+
+        color:var(--secondary);
+        font-family: roboto;
+        text-decoration: none;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-button:hover , .social-button:focus{
+        background-color: var(--secondary);
+        color: var(--primary);
+      }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+      <div class="img-container">
+        <img src="./assets/images/my-icon.jpg" alt="personal picture">
+      </div>
+
+      <div class="text-container">
+        <div class="text-line name">Hussam Tarteer</div>
+        <div class="text-line place">Amman,Jordan</div>
+        <div class="text-line position">Backend-first fullstack developer</div>
+      </div>
+
+      <div class="button-container">
+        <a href="https://github.com/hustarico" class="social-button" target="_blank">GitHub</a>
+        <a href="https://www.frontendmentor.io/profile/hustarico" class="social-button" target="_blank">Frontend Mentor</a>
+        <a href="https://www.linkedin.com/in/hussam-tarteer-0b72422a0/" class="social-button" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/hussam.m.tarteer/" class="social-button" target="_blank">Instagram</a>
+
+      </div>
+    </div>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/hustarico">hustarico</a>.
+    </div>
+</body>
+</html>
