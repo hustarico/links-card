@@ -1,0 +1,161 @@
+:root{
+      --background:#000019;
+      --primary:#00bbbe;
+      --secondary:#ffffff;
+      }
+
+      *{
+        margin: 0px;
+        padding: 0px;
+        
+      }
+
+      body{
+        background-color:var(--background);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        height: 100vh;
+
+        margin: 0px;
+      }
+
+      .attribution { font-size: 11px; text-align: center;color: var(--secondary); }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+
+      
+      
+      .main-container{
+        
+
+        /* border: 1px white solid; */
+
+        height: 80vh;
+        width: 25vw;
+
+        min-height: fit-content;
+        min-width: fit-content;
+
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+
+        padding: 30px;
+
+        background-color: rgb(30, 40, 75);
+
+
+      }
+
+      .img-container{
+        border-radius: 50%;
+        overflow: hidden;
+
+        height: 100px;
+        width: 100px;
+      }
+      .img-container img{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+      }
+
+      .text-container{
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+        gap: 0px;
+      }
+
+
+      .text-line{
+        color:var(--primary);
+        font-size: 3rem;
+        font-family: roboto;
+        
+      }
+
+      
+
+      .name{
+        font-size: 25px;
+
+        margin-top: 20px;
+      }
+      .place{
+        font-size: 15px;
+
+        margin-top: 10px;
+
+        color: var(--secondary);
+      }
+      .position{
+        font-size: 15px;
+
+        margin-top: 25px;
+      }
+
+
+
+      .button-container{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 30px;
+
+        width: 100%;
+
+        gap: 20px;
+      }
+
+      .social-button{
+        width: 100%;
+        height: 40px;
+
+        border: none;
+
+        border-radius: 10px;
+
+
+        background-color: var(--primary);
+
+        color:var(--secondary);
+        font-family: roboto;
+        text-decoration: none;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-button:hover , .social-button:focus{
+        background-color: var(--secondary);
+        color: var(--primary);
+      }
+
+
+      @media (max-width:400px) {
+        html, body {
+          height: 100%;
+        }
+
+
+        .main-container{
+          height: 80%;
+          max-height: fit-content;
+
+        }
+
+      }
