@@ -35,7 +35,8 @@
 
         /* border: 1px white solid; */
 
-        height: 80vh;
+        /* height: 80vh; */
+        height: fit-content;
         width: 25vw;
 
         min-height: fit-content;
